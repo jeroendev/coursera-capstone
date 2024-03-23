@@ -1,4 +1,5 @@
 import logo from "../assets/logo-little-lemon.jpg";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -36,12 +37,12 @@ const Navbar = () => {
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#reservations">
+              <Link to="/booking" className="nav-link">
                 Reservations
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#orderonline">
+              <a className="nav-link" href="#menu">
                 Order Online
               </a>
             </li>

@@ -1,10 +1,13 @@
 import React from "react";
 import logo from "../assets/logo-little-lemon.jpg";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
     <footer>
-      <div className="container">
+      <div className="container pt-4">
+        {" "}
+        <hr />
         <div className="row">
           <div className="col-md-3">
             <img src={logo} alt="Little lemon logo" id="footer-img" />
@@ -20,19 +23,19 @@ const Footer = () => {
                 <a href="/">Home</a>
               </li>
               <li>
-                <a href="/">About</a>
+                <a href="#about">About</a>
               </li>
               <li>
-                <a href="/">Menu</a>
+                <a href="#menu">Menu</a>
               </li>
               <li>
-                <a href="/">Reservations</a>
+                <Link to="/booking">Reservations</Link>
               </li>
               <li>
-                <a href="/">Order Online</a>
+                <a href="#menu">Order Online</a>
               </li>
               <li>
-                <a href="/">Login</a>
+                <a href="#login">Login</a>
               </li>
             </ul>
           </div>
